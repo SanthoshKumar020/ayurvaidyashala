@@ -14,7 +14,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
     onMouseEnter={onOpen}
     onMouseLeave={onClose}
     style={{
-      backgroundColor: isOpen ? '#DDF6D2' : 'transparent',
+      backgroundColor: isOpen ? '#f0f2f0' : 'transparent',
       color: '#000', // text color always black
     }}
   >
@@ -23,7 +23,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
       <div
         className="absolute left-0 mt-2 w-56 shadow-lg rounded z-10"
         style={{
-          backgroundColor: '#FEFF9F',
+          backgroundColor: '#f0f2f0',
           color: '#000',
         }}
       >
