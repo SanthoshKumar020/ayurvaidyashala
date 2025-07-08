@@ -15,7 +15,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
     onMouseLeave={onClose}
     style={{
       backgroundColor: isOpen ? '#fde047' : 'transparent',
-      color: isOpen ? '#222' : '#fff',
+      color: '#000', // text color always black
     }}
   >
     <span>{title} &#x2b;</span>
@@ -24,15 +24,21 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
         className="absolute left-0 mt-2 w-56 shadow-lg rounded z-10"
         style={{
           backgroundColor: '#FEFF9F',
-          color: '#222',
+          color: '#000',
         }}
       >
         {items.map((item) => (
           <a
             key={item.label}
             href={item.href}
-            className="block px-4 py-2 hover:bg-yellow-200 text-sm"
-            style={{ color: '#222', textDecoration: 'none' }}
+            className="block px-4 py-2 text-sm"
+            style={{
+              color: '#000',
+              textDecoration: 'none',
+              transition: 'background 0.2s, color 0.2s',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.color = '#DDF6D2')}
+            onMouseLeave={e => (e.currentTarget.style.color = '#000')}
           >
             {item.label}
           </a>
