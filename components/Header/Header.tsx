@@ -34,8 +34,11 @@ export default function Header() {
       </div>
 
       {/* Dropdown Bar */}
-      <div className="w-full py-3 bg-gradient-to-r from-cyan-700 to-teal-600 transition-colors duration-300">
-        <div className="flex justify-center gap-10 flex-wrap text-white font-semibold text-base max-w-7xl mx-auto">
+      <div
+        className="w-full py-3 transition-colors duration-300"
+        style={{ background: '#FFEEA9' }}
+      >
+        <div className="flex justify-center gap-10 flex-wrap text-black font-semibold text-base max-w-7xl mx-auto">
           {dropdowns.map((item) => (
             <Dropdown
               key={item.key}
