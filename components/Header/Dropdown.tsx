@@ -31,7 +31,7 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
           <a
             key={item.label}
             href={item.href}
-            className="block px-4 py-2 text-sm hover:bg-yellow-200"
+            className="block px-4 py-2 text-sm"
             style={{
               color: '#000',
               textDecoration: 'none',
