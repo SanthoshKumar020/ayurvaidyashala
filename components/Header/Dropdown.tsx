@@ -37,8 +37,6 @@ const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClo
               textDecoration: 'none',
               transition: 'background 0.2s, color 0.2s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.color = '#DDF6D2')}
-            onMouseLeave={(e) => (e.currentTarget.style.color = '#000')}
           >
             {item.label}
           </a>
