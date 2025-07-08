@@ -1,32 +1,47 @@
-// components/Header/Dropdown.tsx
-'use client';
-import { useState } from 'react';
+import React from 'react';
 
-export default function Dropdown({ title, items }: { title: string; items: string[] }) {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <div
-      className="relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-    >
-      <button className="text-white font-semibold px-4 py-2 hover:underline">
-        {title} +
-      </button>
-      {open && (
-        <div className="absolute top-full left-0 w-72 bg-white shadow-lg z-50 rounded-md py-2">
-          {items.map((item, i) => (
-            <a
-              key={i}
-              href="#"
-              className="block px-4 py-2 hover:bg-gray-100 text-sm text-gray-800"
-            >
-              {item}
-            </a>
-          ))}
-        </div>
-      )}
-    </div>
-  );
+interface DropdownProps {
+  title: string;
+  items: { label: string; href: string }[];
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
 }
+
+const Dropdown: React.FC<DropdownProps> = ({ title, items, isOpen, onOpen, onClose }) => (
+  <div
+    className="relative"
+    onMouseEnter={onOpen}
+    onMouseLeave={onClose}
+    tabIndex={0} // for keyboard accessibility
+    style={{
+      transition: 'background 0.3s',
+      backgroundColor: isOpen ? '#fde047' : 'transparent',
+      borderRadius: isOpen ? '6px' : undefined,
+      color: isOpen ? '#222' : '#fff', // adjust text color for visibility
+      cursor: 'pointer',
+      padding: '0 0.75rem',
+    }}
+  >
+    <span>{title}</span>
+    {isOpen && (
+      <div
+        className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded z-10"
+        style={{ color: '#222' }}
+      >
+        {items.map((item) => (
+          <a
+            key={item.label}
+            href={item.href}
+            className="block px-4 py-2 hover:bg-gray-100"
+            style={{ color: '#222', textDecoration: 'none' }}
+          >
+            {item.label}
+          </a>
+        ))}
+      </div>
+    )}
+  </div>
+);
+
+export default Dropdown;
