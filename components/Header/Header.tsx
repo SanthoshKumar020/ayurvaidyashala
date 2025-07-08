@@ -9,7 +9,7 @@ export default function Header() {
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   return (
-    <header className="w-full shadow-md">
+    <header className="w-full shadow-md relative z-50">
       {/* Top Menu Bar */}
       <div className="py-4 px-6 flex justify-between items-center max-w-7xl mx-auto bg-gradient-to-r from-green-500 to-teal-500">
         <Link href="/">
