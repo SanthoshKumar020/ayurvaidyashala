@@ -55,43 +55,45 @@ export const CourseSection = () => {
   };
 
   return (
-    <div className="bg-white py-12 px-4">
+    <section className="bg-white py-16 px-4">
       <div className="text-center max-w-3xl mx-auto mb-10">
-        <h2 className="text-sm font-bold text-yellow-600">✦ Rishikul Ayurvaidiyashala</h2>
+        <h2 className="text-sm font-bold text-yellow-600 uppercase">✦ Rishikul Ayurvaidiyashala</h2>
         <h1 className="text-3xl font-bold text-green-700 mt-2">Our Ayurvedic Course</h1>
         <p className="text-gray-600 mt-2">
           Explore the Science of Ayurveda with Our Comprehensive Courses
         </p>
       </div>
 
-      {/* Card Carousel */}
-      <div className="relative flex gap-6 justify-center items-center max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto flex items-center justify-center">
+        {/* Left Arrow */}
         <button
           onClick={handlePrev}
           disabled={startIndex === 0}
-          className={`${
+          className={`absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-green-600 text-white rounded-full shadow-lg ${
             startIndex === 0 ? 'opacity-30 cursor-not-allowed' : ''
-          } bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center absolute left-0 top-1/2 -translate-y-1/2 z-10`}
+          }`}
         >
           &lt;
         </button>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full">
           {visibleCourses.map((course, index) => (
             <CourseCard key={index} {...course} />
           ))}
         </div>
 
+        {/* Right Arrow */}
         <button
           onClick={handleNext}
           disabled={startIndex + 3 >= allCourses.length}
-          className={`${
+          className={`absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 bg-green-600 text-white rounded-full shadow-lg ${
             startIndex + 3 >= allCourses.length ? 'opacity-30 cursor-not-allowed' : ''
-          } bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center absolute right-0 top-1/2 -translate-y-1/2 z-10`}
+          }`}
         >
           &gt;
         </button>
       </div>
-    </div>
+    </section>
   );
 };

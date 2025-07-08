@@ -4,50 +4,54 @@ const therapies = [
   {
     title: 'Vamana',
     description:
-      'is a panchakarma treatment involving therapeutic vomiting induced by herbal medicines. It aims to expel accumulated toxins and mucus from the upper respiratory tract and stomach, promoting overall detoxification and balance in the body.',
+      'A panchakarma treatment involving therapeutic vomiting to remove toxins from the upper digestive tract.',
   },
   {
     title: 'Virechana',
     description:
-      'is a panchakarma therapy that uses herbal purgatives to cleanse the digestive tract. It helps eliminate toxins, excess bile, and Pitta-related imbalances, promoting detoxification, improved digestion, and overall health.',
+      'A herbal purgation therapy to cleanse the intestines and detoxify excess Pitta.',
   },
   {
     title: 'Basti',
     description:
-      'is a therapeutic panchakarma treatment involving the administration of medicated enemas. It helps cleanse and nourish the colon, balancing Vata dosha, relieving constipation, promoting detoxification, and supporting overall gastrointestinal health.',
+      'An Ayurvedic medicated enema therapy for cleansing and nourishing the colon.',
   },
   {
     title: 'Nasya',
     description:
-      'is a panchakarma therapy where herbal oils or powders are administered through the nasal passages. It helps clear sinus congestion, improve breathing, nourish nasal tissues, and balance Prana (life force), promoting overall respiratory health and mental clarity.',
+      'Herbal oils or powders are administered through the nose to cleanse sinuses and enhance mental clarity.',
   },
   {
     title: 'Raktamokshana',
     description:
-      'is a panchakarma therapy aimed at purifying the blood. It involves techniques like bloodletting or using leeches to remove impurities from the bloodstream, promoting better circulation and overall health.',
+      'A blood purification therapy using methods like leeching to eliminate toxins and improve circulation.',
   },
   {
     title: 'Abhyanga',
     description:
-      'is a traditional Ayurvedic full-body oil massage. It uses warm herbal oils to deeply nourish the skin, relax muscles, improve blood circulation, and promote detoxification. Abhyanga also calms the mind, enhances sleep quality, and supports overall well-being.',
+      'A full-body oil massage using warm herbal oils for relaxation, detox, and rejuvenation.',
   },
   {
     title: 'Shirodhara',
     description:
-      'is an Ayurvedic therapy where a continuous stream of warm herbal oil or other liquids is poured onto the forehead, specifically on the “third eye” area. It induces deep relaxation, relieves stress, balances emotions, and enhances mental clarity and focus.',
+      'Warm oil is poured onto the forehead to relax the mind, reduce anxiety, and improve focus.',
   },
   {
     title: 'Swedana',
     description:
-      'is a therapeutic sweating treatment in Ayurveda. It involves sitting in a steam chamber or receiving steam therapy with herbal-infused steam to induce sweating. Swedana helps open the pores, eliminate toxins, reduce stiffness, and promote relaxation and rejuvenation.',
+      'An herbal steam therapy that opens pores, promotes sweating, and removes deep-rooted toxins.',
   },
 ];
 
 export const TherapyList = () => {
   return (
-    <div className="grid md:grid-cols-2 gap-10 mt-16">
+    <div className="grid md:grid-cols-2 gap-6 mt-16">
       {therapies.map((therapy) => (
-        <TherapyItem key={therapy.title} title={therapy.title} description={therapy.description} />
+        <TherapyItem
+          key={therapy.title}
+          title={therapy.title}
+          description={therapy.description}
+        />
       ))}
     </div>
   );

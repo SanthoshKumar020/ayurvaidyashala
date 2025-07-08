@@ -51,18 +51,20 @@ export const BlogCarousel = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-12 px-4">
+    <section className="bg-[#FFEEA9] py-16 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center mb-6">
-          <div className="text-center md:text-left">
-            <p className="text-sm text-gray-500 font-medium mb-1">Featured Blog</p>
-            <h2 className="text-2xl font-bold text-green-700">
-              Learn about our latest <br /> news from blog.
+        {/* Header Section */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+          <div>
+            <p className="text-sm font-medium text-[#00BF96] uppercase tracking-wide mb-1">
+              Featured Blog
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#040F36] leading-snug">
+              Learn about our latest <br className="hidden md:block" /> news from blog.
             </h2>
           </div>
-          <p className="text-sm text-gray-500 max-w-md mt-4 md:mt-0">
-            Follow our latest news and thoughts which focuses exclusively on design, art, vintage,
-            and also work updates.
+          <p className="text-sm text-[#333333] max-w-lg">
+            Explore articles on healing, detox, Ayurvedic living, and ancient practices for a balanced lifestyle.
           </p>
         </div>
 
@@ -70,13 +72,13 @@ export const BlogCarousel = () => {
         <div className="flex justify-end items-center gap-2 mb-4">
           <button
             onClick={() => scroll('left')}
-            className="p-2 bg-white border rounded-full hover:bg-green-100"
+            className="p-2 rounded-full bg-white border border-[#00BF96] hover:bg-[#00BF96] hover:text-white transition"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
           <button
             onClick={() => scroll('right')}
-            className="p-2 bg-white border rounded-full hover:bg-green-100"
+            className="p-2 rounded-full bg-white border border-[#00BF96] hover:bg-[#00BF96] hover:text-white transition"
           >
             <ArrowRight className="w-5 h-5" />
           </button>
@@ -85,12 +87,12 @@ export const BlogCarousel = () => {
         {/* Blog Cards */}
         <div
           ref={scrollRef}
-          className="flex gap-6 overflow-x-auto scroll-smooth hide-scrollbar"
+          className="flex gap-6 overflow-x-auto scroll-smooth pb-2 hide-scrollbar"
         >
           {blogData.map((blog, index) => (
             <div
               key={index}
-              className="min-w-[280px] max-w-sm bg-white rounded-lg shadow-md overflow-hidden"
+              className="min-w-[280px] max-w-sm bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden"
             >
               <img
                 src={blog.image}
@@ -99,14 +101,25 @@ export const BlogCarousel = () => {
               />
               <div className="p-4">
                 <div className="text-xs text-gray-500 flex items-center gap-2 mb-2">
-                  📅 {blog.date} | ✍️ Ayurvaidya Shala
+                  📅 {blog.date} | ✍️ AyurVaidya Shala
                 </div>
-                <h3 className="text-md font-semibold text-gray-800">{blog.title}</h3>
+                <h3 className="text-md font-semibold text-[#040F36]">{blog.title}</h3>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Hide scrollbar utility */}
+      <style jsx>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </section>
   );
 };
