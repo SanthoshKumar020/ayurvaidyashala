@@ -1,5 +1,6 @@
 'use client';
 
+import Footer from "../../../components/Footer";
 import AntiAgeing from "./antiage1";
 import DailySchedule from "./DailySchedule";
 import Facilities from "./Facilities";
@@ -13,7 +14,6 @@ import TreatmentGallery from "./TreatmentGallery";
 import TreatmentJourney from "./TreatmentJourney";
 import TreatmentTabs from "./TreatmentTabs";
 import WhyAyurvedaIsBest from "./WhyAyurvedaIsBest";
-import Footer from "../../components/Footer";
 
 export default function AntiAgeingPage() {
   return (
