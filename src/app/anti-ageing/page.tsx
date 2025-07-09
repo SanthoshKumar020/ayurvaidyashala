@@ -1,5 +1,6 @@
 'use client';
 
+import AntiAgeing from "./antiage1";
 import DailySchedule from "./DailySchedule";
 import Facilities from "./Facilities";
 import HeroSection from "./HeroSection";
@@ -18,7 +19,7 @@ export default function AntiAgeingPage() {
     <main>
       <HeroSection />
       <ProgramDetails />
-      <AntiAgeingPage/>
+      <AntiAgeing/>
       <TreatmentTabs />
       <TreatmentJourney />
       <DailySchedule />

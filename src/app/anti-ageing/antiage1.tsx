@@ -1,7 +1,7 @@
 'use client';
 import Image from 'next/image';
 
-export default function AntiAgeingPage() {
+export default function AntiAgeing() {
   return (
     <div className="flex flex-col md:flex-row px-4 md:px-10 py-10 gap-8 max-w-7xl mx-auto">
       {/* Left Sidebar */}
