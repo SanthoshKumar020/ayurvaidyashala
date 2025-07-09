@@ -44,7 +44,6 @@ const RetreatAccordion = () => {
   const imageUrls = [
     '/images/kerala1.jpg',
     '/images/kerala2.jpg',
-    '/images/kerala3.jpg',
   ];
 
   return (

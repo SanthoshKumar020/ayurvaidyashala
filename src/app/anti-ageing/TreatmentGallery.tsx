@@ -10,7 +10,6 @@ const images = [
   '/images/therapy4.jpg',
   '/images/therapy5.jpg',
   '/images/therapy6.jpg',
-  '/images/therapy7.jpg',
 ];
 
 export default function TreatmentGallery() {
