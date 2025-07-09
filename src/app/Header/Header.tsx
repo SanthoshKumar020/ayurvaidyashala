@@ -21,7 +21,7 @@ export default function Header() {
             <span className="group-hover:text-yellow-400">Home</span>
             <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 scale-x-100 transition-transform origin-left" />
           </Link>
-          <Link href="#">Treatments</Link>
+          <Link href="/ayurveda">Ayurveda</Link>
           <Link href="#">Retreats</Link>
           <Link href="#">Courses</Link>
           <Link href="#">Panchakarma</Link>
