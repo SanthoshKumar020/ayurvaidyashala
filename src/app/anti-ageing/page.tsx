@@ -13,6 +13,7 @@ import TreatmentGallery from "./TreatmentGallery";
 import TreatmentJourney from "./TreatmentJourney";
 import TreatmentTabs from "./TreatmentTabs";
 import WhyAyurvedaIsBest from "./WhyAyurvedaIsBest";
+import Footer from "../../components/Footer";
 
 export default function AntiAgeingPage() {
   return (
@@ -30,6 +31,7 @@ export default function AntiAgeingPage() {
       <RevitalizeYourYouth/>
       <WhyAyurvedaIsBest/>
       <TreatmentGallery/>
+      <Footer/>
     </main>
   );
 }

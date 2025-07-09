@@ -1,3 +1,4 @@
+import Footer from "../../../components/Footer";
 import AyurvedaHeroSection from "./AyurvedaHeroSection";
 import AyurvedaSpectrumSection from "./AyurvedaSpectrumSection";
 import DietMistakesSection from "./DietMistakesSection";
@@ -14,6 +15,7 @@ export default function AyurvedaPage() {
       <KeralaAyurvedaSection/>
       <AyurvedaSpectrumSection/>
       <DietMistakesSection/>
+      <Footer/>
     </>
   );
 }
