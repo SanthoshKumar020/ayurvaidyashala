@@ -19,25 +19,23 @@ export default function Header() {
         <nav className="hidden md:flex gap-8 text-white font-semibold text-base">
           <Link href="/" className="relative group">
             <span className="group-hover:text-yellow-400">Home</span>
-            <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-yellow-400 scale-x-100 transition-transform origin-left" />
           </Link>
-          <Link href="/ayurveda">Ayurveda</Link>
-          <Link href="#">Retreats</Link>
-          <Link href="#">Courses</Link>
-          <Link href="#">Panchakarma</Link>
-          <Link href="#">Clinics</Link>
-          <Link href="#">Amenities</Link>
-          <Link href="#">FAQ</Link>
-          <Link href="#">About Us</Link>
-          <Link href="#">Contact Us</Link>
+          <Link href="/ayurveda" className="relative group">
+            <span className="group-hover:text-yellow-400">Ayurveda</span>
+          </Link>
+          <Link href="#" className="relative group">Retreats</Link>
+          <Link href="#" className="relative group">Courses</Link>
+          <Link href="#" className="relative group">Panchakarma</Link>
+          <Link href="#" className="relative group">Clinics</Link>
+          <Link href="#" className="relative group">Amenities</Link>
+          <Link href="#" className="relative group">FAQ</Link>
+          <Link href="#" className="relative group">About Us</Link>
+          <Link href="#" className="relative group">Contact Us</Link>
         </nav>
       </div>
 
       {/* Dropdown Bar */}
-      <div
-        className="w-full py-3 transition-colors duration-300"
-        style={{ background: '#FFEEA9' }}
-      >
+      <div className="w-full py-3 transition-colors duration-300" style={{ background: '#FFEEA9' }}>
         <div className="flex justify-center gap-10 flex-wrap text-black font-semibold text-base max-w-7xl mx-auto">
           {dropdowns.map((item) => (
             <Dropdown
