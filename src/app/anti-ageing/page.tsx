@@ -1,3 +1,5 @@
+'use client';
+
 import DailySchedule from "./DailySchedule";
 import Facilities from "./Facilities";
 import HeroSection from "./HeroSection";
