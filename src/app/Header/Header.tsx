@@ -23,6 +23,7 @@ export default function Header() {
           <Link href="/ayurveda" className="relative group">
             <span className="group-hover:text-yellow-400">Ayurveda</span>
           </Link>
+          
           <Link href="#" className="relative group">Retreats</Link>
           <Link href="#" className="relative group">Courses</Link>
           <Link href="#" className="relative group">Panchakarma</Link>
