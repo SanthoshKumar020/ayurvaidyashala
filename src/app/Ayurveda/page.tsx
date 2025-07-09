@@ -9,8 +9,8 @@ export default function AyurvedaPage() {
   return (
     <>
       {/* Other content */}
-      <TherapySection />
       <AyurvedaHeroSection/>
+      <TherapySection />
       <KeralaAyurvedaSection/>
       <AyurvedaSpectrumSection/>
       <DietMistakesSection/>
