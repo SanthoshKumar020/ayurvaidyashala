@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   theme: {
     extend: {
@@ -8,5 +10,7 @@ module.exports = {
       },
     },
   },
+  plugins: [
+    require('@tailwindcss/line-clamp'), // Add this line
+  ],
 }
-

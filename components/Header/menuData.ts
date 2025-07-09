@@ -4,7 +4,7 @@ export const dropdowns = [
     key: 'treatment',
     title: 'Ayurveda Treatment',
     items: [
-      { label: 'Anti Ageing Program', href: '/treatment/anti-ageing' },
+      { label: 'Anti Ageing Program', href: '/anti-ageing' },
       { label: 'Detox Rehabilitation Program', href: '/treatment/detox-rehabilitation' },
       { label: 'Beauty Skin Care Program', href: '/treatment/beauty-skin-care' },
       { label: 'Digestive and Immunity Program', href: '/treatment/digestive-immunity' },
