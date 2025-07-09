@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-
 const features = [
   {
     title: 'Ayurvedic Panchakarma',
