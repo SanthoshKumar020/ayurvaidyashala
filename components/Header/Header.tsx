@@ -22,7 +22,6 @@ export default function Header() {
           className="cursor-pointer"
           onClick={() => router.push('/')}
         />
-
         <nav className="hidden md:flex gap-8 text-white font-semibold text-base">
           <span className="relative group cursor-pointer" onClick={() => router.push('/')}>
             <span className="group-hover:text-yellow-400">Home</span>
