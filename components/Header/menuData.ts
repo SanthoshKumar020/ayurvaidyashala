@@ -5,11 +5,11 @@ export const dropdowns = [
     title: 'Ayurveda Treatment',
     items: [
       { label: 'Anti Ageing Program', href: '/anti-ageing' },
-      { label: 'Detox Rehabilitation Program', href: '/treatment/detox-rehabilitation' },
-      { label: 'Beauty Skin Care Program', href: '/treatment/beauty-skin-care' },
-      { label: 'Digestive and Immunity Program', href: '/treatment/digestive-immunity' },
-      { label: 'Panchakarma and Rejuvenation Program', href: '/treatment/panchakarma-rejuvenation' },
-      { label: 'Spinal and Brain Care Rejuvenation', href: '/treatment/spinal-brain-care' },
+      { label: 'Detox Rehabilitation Program', href: '/detox-rehabilitation-program' },
+      { label: 'Beauty Skin Care Program', href: '/beauty-skin-care-program' },
+      { label: 'Digestive and Immunity Program', href: '/digestive-and-immunity-program' },
+      { label: 'Panchakarma and Rejuvenation Program', href: '/panchakarma-and-rejuvenation-program' },
+      { label: 'Spinal and Brain Care Rejuvenation', href: '/spinal-and-brain-care-rejuvenation' },
     ],
   },
   {
