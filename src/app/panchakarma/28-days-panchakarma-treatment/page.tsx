@@ -1,6 +1,6 @@
 'use client';
 
-import Footer from "../../../../components/Footer";
+import Footer from "../../../components/Footer";
 import AntiAgeing from "./antiage1";
 import DailySchedule from "./DailySchedule";
 import Facilities from "./Facilities";
