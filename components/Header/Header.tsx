@@ -29,14 +29,24 @@ export default function Header() {
           <span className="relative group cursor-pointer" onClick={() => router.push('/ayurveda')}>
             <span className="group-hover:text-yellow-400">Ayurveda</span>
           </span>
-          <span className="relative group cursor-pointer">Retreats</span>
-          <span className="relative group cursor-pointer">Courses</span>
-          <span className="relative group cursor-pointer">Panchakarma</span>
-          <span className="relative group cursor-pointer">Clinics</span>
-          <span className="relative group cursor-pointer">Amenities</span>
-          <span className="relative group cursor-pointer">FAQ</span>
-          <span className="relative group cursor-pointer">About Us</span>
-          <span className="relative group cursor-pointer">Contact Us</span>
+                    <span className="relative group cursor-pointer" onClick={() => router.push('/Blogs')}>
+            <span className="group-hover:text-yellow-400">Blogs</span>
+          </span>
+          <span className="relative group cursor-pointer" onClick={() => router.push('/our-experts')}>
+            <span className="group-hover:text-yellow-400">Our Experts</span>
+          </span>
+                              <span className="relative group cursor-pointer" onClick={() => router.push('/Faq')}>
+            <span className="group-hover:text-yellow-400">Faq</span>
+          </span>
+          <span className="relative group cursor-pointer" onClick={() => router.push('/kerala')}>
+            <span className="group-hover:text-yellow-400">Kerala</span>
+          </span>
+                                        <span className="relative group cursor-pointer" onClick={() => router.push('/aboutus')}>
+            <span className="group-hover:text-yellow-400">About US</span>
+          </span>
+          <span className="relative group cursor-pointer" onClick={() => router.push('/contactus')}>
+            <span className="group-hover:text-yellow-400">Contact US</span>
+          </span>
         </nav>
       </div>
 
